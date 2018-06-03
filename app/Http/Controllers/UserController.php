@@ -73,12 +73,6 @@ class UserController extends Controller
 
       return redirect()->route('users.show', $user->id);
 
-      // if () {
-      //
-      // } else {
-      //   Session::flash('danger', 'Sorry a problem occurred while creating this user.');
-      //   return redirect()->route('users.create');
-      // }
     }
 
     /**
