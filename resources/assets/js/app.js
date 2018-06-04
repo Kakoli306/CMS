@@ -14,10 +14,3 @@ Vue.use(Buefy);
 // });
 
 require('./manage')
-
-$(document).ready(function() {
-  //  Dropdowns
-  $('.dropdown').hover(function(e) {
-    $(this).toggleClass('is-open')
-  })
-})

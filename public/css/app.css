@@ -17542,6 +17542,26 @@ label.panel-block:hover {
   background: rgba(255, 56, 96, 0.05);
 }
 
+/* ========================================
+   ============ Text Overrides ===========
+   ======================================== */
+
+.is-muted {
+  color: #b5b5b5 !important;
+}
+
+a.is-muted:hover {
+  color: #7a7a7a !important;
+}
+
+.nav-item img {
+  max-height: 2.8rem;
+}
+
+.nav {
+  height: 4.5rem;
+}
+
 .m-t-5 {
   margin-top: 5px;
 }
@@ -18054,6 +18074,7 @@ label.panel-block:hover {
 }
 
 .menu-list li ul {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 

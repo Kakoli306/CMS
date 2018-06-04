@@ -58,7 +58,6 @@
               </div>
             @endforeach
           </b-checkbox-group>
-
         </div>
       </div>
       <div class="columns">
