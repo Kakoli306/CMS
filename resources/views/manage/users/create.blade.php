@@ -4,7 +4,7 @@
   <div class="flex-container">
     <div class="columns m-t-10">
       <div class="column">
-        <h1 class="title">Create New User</h1>
+        <h1 class="title">Create New Students</h1>
       </div>
     </div>
     <hr class="m-t-0">
@@ -26,32 +26,15 @@
             </p>
           </div>
 
-          <div class="field">
-            <label for="password" class="label">Password</label>
-            <p class="control">
-              <input type="text" class="input" name="password" id="password" v-if="!auto_password" placeholder="Manually give a password to this user">
-              <b-checkbox name="auto_generate" class="m-t-15" v-model="auto_password">Auto Generate Password</b-checkbox>
-            </p>
-          </div>
-        </div> <!-- end of .column -->
 
-        <div class="column">
-          <label for="roles" class="label">Roles:</label>
-          <input type="hidden" name="roles" :value="rolesSelected" />
+  </div> <!-- end of .column -->
 
-          <b-checkbox-group v-model="rolesSelected">
-            @foreach ($roles as $role)
-              <div class="field">
-                <b-checkbox :custom-value="{{$role->id}}">{{$role->display_name}}</b-checkbox>
-              </div>
-            @endforeach
-          </b-checkbox-group>
-        </div>
-      </div> <!-- end of .columns for forms -->
+
+  </div> <!-- end of .columns for forms -->
       <div class="columns">
         <div class="column">
           <hr />
-          <button class="button is-primary is-pulled-right" style="width: 250px;">Create New User</button>
+          <button class="button is-primary is-pulled-right" style="width: 250px;">Create New Students</button>
         </div>
       </div>
     </form>

@@ -4,7 +4,7 @@
   <div class="flex-container">
     <div class="columns m-t-10">
       <div class="column">
-        <h1 class="title">Edit User</h1>
+        <h1 class="title">Edit Student</h1>
       </div>
     </div>
     <hr class="m-t-0">
@@ -28,27 +28,11 @@
             </p>
           </div>
 
-          <div class="field">
-            <label for="password" class="label">Password</label>
-            <b-radio-group v-model="password_options">
-              <div class="field">
-                <b-radio name="password_options" value="keep">Do Not Change Password</b-radio>
-              </div>
-              <div class="field">
-                <b-radio name="password_options" value="auto">Auto-Generate New Password</b-radio>
-              </div>
-              <div class="field">
-                <b-radio name="password_options" value="manual">Manually Set New Password</b-radio>
-                <p class="control">
-                  <input type="text" class="input" name="password" id="password" v-if="password_options == 'manual'" placeholder="Manually give a password to this user">
-                </p>
-              </div>
-            </b-radio-group>
-          </div>
+
         </div> <!-- end of .column -->
 
         <div class="column">
-          <label for="roles" class="label">Roles:</label>
+          <label for="roles" class="label">Status:</label>
           <input type="hidden" name="roles" :value="rolesSelected" />
 
           <b-checkbox-group v-model="rolesSelected">
@@ -63,7 +47,7 @@
       <div class="columns">
         <div class="column">
           <hr />
-          <button class="button is-primary is-pulled-right" style="width: 250px;">Edit User</button>
+          <button class="button is-primary is-pulled-right" style="width: 250px;">Edit Student</button>
         </div>
       </div>
     </form>

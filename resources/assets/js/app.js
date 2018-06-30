@@ -6,7 +6,7 @@ import Buefy from 'buefy'
 
 Vue.use(Buefy);
 
-// Vue.component('example', require('./components/Example.vue'));
+ Vue.component('slugWidget', require('./components/slugWidget.vue'));
 
 // var app = new Vue({
 //   el: '#app',
